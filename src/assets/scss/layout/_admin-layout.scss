@@ -1,0 +1,46 @@
+.admin {
+  &-header {
+    background: #bdbcbb;
+    height: 48px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    // 編譯後: .hideUp .admin-header
+    .hideUp & {
+      top: -48px;
+    }
+  }
+  &-sidebar {
+    height: 100vh;
+    &-hover:hover {
+      background: $light;
+      color: $primary;
+    }
+    & .active {
+      background: $light;
+      color: $primary;
+    }
+  }
+  &-main {
+    min-height: 100vh;
+    .nav-link {
+      background-color: transparent;
+      color: $primary;
+      &.active {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+    // position: fixed 會離開原本層級
+    @include media-breakpoint-up(lg) {
+      margin-left: calc(1 / 12 * 100vw);
+    }
+  }
+  &-offcanvas {
+    .offcanvas-body .active {
+      background: $light;
+      color: $primary;
+    }
+  }
+}

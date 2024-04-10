@@ -1,0 +1,30 @@
+.ad-coupon {
+  .table-head {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35.7px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $grey9F;
+    }
+  }
+  .table-container{
+    &::-webkit-scrollbar{
+    display:none;
+    }
+  }
+  .disabled-link {
+    pointer-events: none;
+    .bi {
+      color: $grey9F !important;
+    }
+  }
+  .custom-form {
+    .form-control, .form-select {
+      border-width: 1px;
+      box-shadow: none;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.articles {
+  .black-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  &-item {
+    &:hover {
+      .black-overlay {
+        opacity: 1;
+      }
+    }
+  }
+}

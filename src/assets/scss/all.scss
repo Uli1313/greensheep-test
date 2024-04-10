@@ -1,0 +1,64 @@
+// import字型區
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+//載入icon
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+
+//bootstrap5設定區
+@import 'bootstrap/scss/functions';
+//bootstrap客製化區(helpers)
+@import './utils/variables';
+
+//客製化variables
+@import './utils/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+
+//客製化utilites放在這
+@import './utils/utilities';
+//客製化元件components放在這
+@import './base/font';
+@import './components/custom';
+@import './components/button';
+@import './components/breadcrumb.scss';
+@import './components/hover-border';
+@import './components/pagination';
+@import './components/tag';
+@import './components/like';
+@import './components/collapse';
+@import './components/pseudoElement.scss';
+@import './components/swiper';
+@import './components/datepicker';
+@import './components/ckeditor-content-styles'; // 前台渲染
+@import './components/ckeditor'; // 客製
+@import './components/vue-awesome-paginate';
+@import './components/g-login';
+@import './components/checkbyeye';
+
+//bootstrap5全部內容
+@import 'bootstrap';
+
+//base 基本設定
+@import './base/base';
+
+//utils 通用設定
+@import './utils/mixin';
+
+//layout css區
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './layout/index-1';
+@import './layout/index-3';
+@import './layout/index-4';
+@import './layout/gotop-btn';
+@import './layout/admin-layout';
+
+//pages css區
+@import './pages/5.blog';
+@import './pages/8-1.memLogin';
+@import './pages/7-3.shopInfo';
+@import './pages/ad-coupons';
+@import './pages/ad-articles';
